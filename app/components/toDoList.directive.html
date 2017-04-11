@@ -1,0 +1,35 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="input-group">
+				<span class="input-group-addon">
+					<input type="checkbox" ng-model="vm.model.checked">
+				</span>
+					<input type="text" class="form-control" placeholder="Enter your message"
+					       ng-model="vm.model.message">
+					<span class="input-group-addon" ng-click="vm.createNewItem()">Add</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="panel-body">
+		<table class="table table-striped">
+			<tbody>
+			<tr quiz-app-item item="item" ng-repeat="item in items"></tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="panel-footer item_list_footer">
+		<div class="row">
+			<div class="col-lg-offset-4 col-lg-4">
+				<div class="input-group-btn">
+					<button type="button" class="btn btn-secondary" ng-click="vm.selectAll()">Select All</button>
+					<button type="button" class="btn btn-danger" ng-click="vm.removeSelected()">Delete Selected</button>
+					<button type="button" class="btn btn-danger btn-secondary" ng-click="vm.deleteAll()">Delete All
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+{
+  "name": "angular_quiz",
+  "version": "1.0.0",
+  "description": "Test Angular Application",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "postinstall": "bower install",
+    "start": "http-server -a localhost -p 8000 -c-1 ./app"
+  },
+  "author": "Alexey Zhurkov",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "http-server": "^0.9.0"
+  }
+}
